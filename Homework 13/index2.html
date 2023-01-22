@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 13.2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .heading_color,
+        .heading_image {
+            padding: 15px;
+            cursor: pointer;
+
+        }
+
+        .color_block {
+            margin: 100px auto;
+            display: flex;
+            width: 610px;
+            height: 302px;
+            flex-wrap: wrap;
+            display: none;
+
+        }
+
+        .image_block {
+            margin: 100px auto;
+            display: flex;
+            width: 610px;
+            height: 302px;
+            flex-wrap: wrap;
+            display: none;
+        }
+
+        .color_block-item {
+            border: 1px solid black;
+            width: 200px;
+            height: 110px;
+
+        }
+
+        .image_block-item {
+            border: 1px solid black;
+            width: 200px;
+            height: 110px;
+
+        }
+
+        .display_flex {
+            display: flex;
+        }
+
+        .c_item-1 {
+            background-color: #c56cf0;
+        }
+
+        .c_item-2 {
+            background-color: #18dcff;
+        }
+
+        .c_item-3 {
+            background-color: #ff9f1a;
+        }
+
+        .c_item-4 {
+            background-color: #3ae374;
+        }
+
+        .c_item-5 {
+            background-color: #4b4b4b;
+        }
+
+        .c_item-6 {
+            background-color: #474787;
+        }
+
+        .c_item-7 {
+            background-color: #218c74;
+        }
+
+        .c_item-8 {
+            background-color: #f368e0;
+        }
+
+        .c_item-9 {
+            background-color: #ee5253;
+        }
+
+        .i_item-1 {
+            background-image: url(./images/img1.jpg);
+            /* background-position: center; */
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+        }
+
+        .i_item-2 {
+            background-image: url(./images/img2.png);
+            /* background-position: center; */
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+        }
+
+        .i_item-3 {
+            background-image: url(./images/img3.png);
+            /* background-position: center; */
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+        }
+
+        .i_item-4 {
+            background-image: url(./images/img4.jpg);
+            /* background-position: center;
+            background-repeat: no-repeat; */
+            background-size: cover;
+        }
+
+        .i_item-5 {
+            background-image: url(./images/img5.png);
+            /* background-position: center;
+            background-repeat: no-repeat; */
+            background-size: cover;
+        }
+
+        .i_item-6 {
+            background-image: url(./images/img6.jpg);
+            /* background-position: center; */
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+        }
+
+        .i_item-7 {
+            background-image: url(./images/img7.png);
+            /* background-position: center; */
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+        }
+
+        .i_item-8 {
+            background-image: url(./images/img8.jpg);
+            /* background-position: center; */
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+        }
+
+        .i_item-9 {
+            background-image: url(./images/img9.jpg);
+            /* background-position: center; */
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+        }
+
+        .task {
+            margin: 50px auto;
+            position: absolute;
+            right: 20px;
+            top: 0;
+
+        }
+
+        .task_link {
+            margin-right: 10px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            border: 1px solid black;
+            border-radius: 50px;
+            padding: 9px;
+            background-color: wheat;
+            color: black;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="task">
+            <a href="index.html" class="task_link">Task 1</a>
+            <a href="index2.html" class="task_link">Task 2</a>
+        </div>
+    </nav>
+
+    <h1 class="heading_color">Колір</h1>
+    <h1 class="heading_image">Зображення</h1>
+    <div class="color_block">
+        <div class="color_block-item c_item-1"></div>
+        <div class="color_block-item c_item-2"></div>
+        <div class="color_block-item c_item-3"></div>
+        <div class="color_block-item c_item-4"></div>
+        <div class="color_block-item c_item-5"></div>
+        <div class="color_block-item c_item-6"></div>
+        <div class="color_block-item c_item-7"></div>
+        <div class="color_block-item c_item-8"></div>
+        <div class="color_block-item c_item-9"></div>
+    </div>
+    <div class="image_block">
+        <div class="image_block-item i_item-1"></div>
+        <div class="image_block-item i_item-2"></div>
+        <div class="image_block-item i_item-3"></div>
+        <div class="image_block-item i_item-4"></div>
+        <div class="image_block-item i_item-5"></div>
+        <div class="image_block-item i_item-6"></div>
+        <div class="image_block-item i_item-7"></div>
+        <div class="image_block-item i_item-8"></div>
+        <div class="image_block-item i_item-9"></div>
+    </div>
+
+
+    <script src="main2.js"></script>
+</body>
+
+</html>

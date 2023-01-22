@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Cursed Timer ULiL';
+    src: url(./CursedTimerUlil.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1B1464;
+    color: #1e90ff;
+}
+
+.date,
+.time {
+    padding: 20px;
+    max-width: 700px;
+    border: 5px solid #1e90ff;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 70px;
+    border-radius: 10px;
+    font-family: 'Cursed Timer ULiL';
+}
+
+.date {
+    max-width: 400px;
+    font-size: 30px;
+}
+
+.stopwatch {
+    padding: 20px;
+    max-width: 1300px;
+    border: 5px solid #1e90ff;
+    margin: 15px auto;
+    border-radius: 10px;
+    font-family: 'Cursed Timer ULiL';
+    display: flex;
+    justify-content: space-between;
+    font-size: 65px;
+    text-align: center;
+}
+
+.stopwatch_left {
+    width: 600px;
+    height: 300px;
+    padding: 30px;
+    border: 3px solid #1e90ff;
+    border: 10px;
+}
+
+.stopwatch_right {
+    width: 592px;
+    height: 260px;
+    border: 5px solid #1e90ff;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.stopwatch-start,
+.stopwatch-loop,
+.stopwatch-stop,
+.stopwatch-reset {
+    width: 90px;
+    height: 40px;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Cursed Timer ULiL';
+    margin-left: 5px;
+    color: #1e90ff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1e90ff;
+    border-radius: 8px;
+    font-size: 19px;
+}
+
+.stopwatch-start:hover,
+.stopwatch-loop:hover,
+.stopwatch-stop:hover,
+.stopwatch-reset:hover {
+    border: 2px solid #a55eea;
+
+}
+
+.stopwatch_btn-box {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer {
+    padding: 20px;
+    max-width: 1300px;
+    border: 5px solid #1e90ff;
+    margin: 15px auto;
+    border-radius: 10px;
+    font-family: 'Cursed Timer ULiL';
+    display: flex;
+    justify-content: space-between;
+}
+
+.timer_left,
+.timer_right {
+    width: 592px;
+    height: 260px;
+    border: 5px solid #1e90ff;
+}
+
+.timer_left,
+.timer_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.timer_left h1 {
+    margin-top: 50px;
+    font-family: 'Cursed Timer ULiL';
+    font-size: 65px;
+    text-align: center;
+}
+
+.timer_left p {
+    margin-top: 10px;
+    font-family: 'Cursed Timer ULiL';
+    font-size: 30px;
+    text-align: center;
+    display: block;
+}
+
+.btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-m,
+.remove-m,
+.start-timer,
+.stop-timer,
+.reset-timer {
+    width: 100px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+    background: transparent;
+    font-family: 'Cursed Timer ULiL';
+    font-size: 20px;
+    padding: 7px;
+    cursor: pointer;
+    color: #1e90ff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1e90ff;
+    border-radius: 8px;
+}
+
+.add-m:hover,
+.remove-m:hover,
+.start-timer:hover,
+.stop-timer:hover,
+.reset-timer:hover {
+    border: 2px solid #a55eea;
+}
+
+.timer_right span {
+    margin-top: 50px;
+    font-family: 'Cursed Timer ULiL';
+    font-size: 65px;
+    text-align: center;
+}
+button:disabled{
+    border: none;
+}

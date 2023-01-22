@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 12.4</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        ol {
+            margin: 10px auto;
+            font-size: 60px;
+            font-family: monospace;
+            cursor: pointer;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            margin: 100px;
+        }
+
+        .task {
+            width: 200px;
+            height: 60px;
+            background-color: cadetblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            border-radius: 35px;
+            font-family: monospace;
+            font-size: 28px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="task"><a href="index.html">Task 1</a></div>
+        <div class="task"><a href="index2.html">Task 2</a></div>
+        <div class="task"><a href="index3.html">Task 3</a></div>
+        <div class="task"><a href="index4.html">Task 4</a></div>
+    </nav>
+    <ol>
+        <li class="li-item" id="item" onclick="addColor()">violet</li>
+        <li class="li-item" id="item" onclick="addColor()">cadetblue</li>
+        <li class="li-item" id="item" onclick="addColor()">green</li>
+        <li class="li-item" id="item" onclick="addColor()">blue</li>
+        <li class="li-item" id="item" onclick="addColor()">orange</li>
+        <li class="li-item" id="item" onclick="addColor()">gray</li>
+    </ol>
+
+
+    <script src="main4.js"></script>
+</body>
+
+</html>

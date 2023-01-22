@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 15.1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+        }
+
+        .scroll_down_box {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #dff9fb;
+        }
+
+        .scroll_up_box {
+            width: 100%;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+
+            background-color: #dff9fb;
+        }
+
+        .scroll_down {
+            margin-top: 300px;
+            font-size: 35px;
+            cursor: pointer;
+        }
+
+        .first_box {
+            padding: 100px;
+            display: flex;
+            justify-content: space-between;
+            height: 700px;
+        }
+
+        .first_box-left {
+            width: 40%;
+            font-size: 25px;
+        }
+
+        .first_box-right {
+            width: 40%;
+        }
+
+        .first_box-img {
+            width: 100%;
+            height: 75%;
+            position: relative;
+            top: 0;
+            right: 195px;
+            margin-top: 153px;
+        }
+
+        .lane {
+            width: 275px;
+            border-top: 5px solid red;
+            margin-top: 20px;
+            margin-left: 80px;
+        }
+
+        .scroll_up {
+            font-size: 50px;
+            /* transition: all 0.4s; */
+            cursor: pointer;
+            margin-top: 200px;
+        }
+
+        .first_box-heading {
+            position: relative;
+            top: 0;
+            left: 56px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="scroll_down_box">
+        <h1 class="scroll_down">Scroll Down</h1>
+    </div>
+    <div class="first_box">
+        <div class="first_box-left">
+            <h1 class="first_box-heading">"Slide from left"</h1>
+            <div class="lane"></div>
+        </div>
+        <div class="first_box-right">
+            <img src="https://wallpaperaccess.com/full/357652.jpg" alt=""
+                class="first_box-img">
+        </div>
+    </div>
+    <div class="scroll_up_box">
+        <h1 class="scroll_up">Scroll Up</h1>
+    </div>
+
+
+
+    <script src="taskScroll.js"></script>
+</body>
+
+</html>

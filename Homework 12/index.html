@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 12.1</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 300px;
+            border: 3px solid black;
+            display: flex;
+            margin: 0 auto;
+            margin-top: 100px;
+            background-color: violet;
+            transition: all 0.4s;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            margin: 100px;
+        }
+        .task {
+            width: 200px;
+            height: 60px;
+            background-color: cadetblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            border-radius: 35px;
+            font-family: monospace;
+            font-size: 28px;
+            
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="task"><a href="index.html">Task 1</a></div>
+        <div class="task"><a href="index2.html">Task 2</a></div>
+        <div class="task"><a href="index3.html">Task 3</a></div>
+        <div class="task"><a href="index4.html">Task 4</a></div>
+    </nav>
+    <div class="container" id="block"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

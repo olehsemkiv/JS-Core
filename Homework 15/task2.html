@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Homework 15.2</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #535c68;
+        }
+
+        .note {
+            margin: 100px auto;
+            width: 1000px;
+            height: 555px;
+            position: relative;
+            background-image: url(./images/img.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 30px 60px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .page1 {
+            width: 307px;
+            height: 478px;
+            padding: 15px;
+
+            border-right: 1px solid black;
+            background-color: white;
+
+        }
+
+        .page2 {
+            width: 316px;
+            height: 478px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            border-left: 1px solid black;
+            background-color: white;
+        }
+
+        .wrapper {
+            display: flex;
+            margin-left: 191px;
+            margin-top: 26px;
+            justify-content: space-between;
+        }
+
+        .task_list {
+            color: #eb4d4b;
+            font-size: 22px;
+        }
+
+        .input_task {
+            border: none;
+            border-bottom: 1px solid black;
+            width: 308px;
+            height: 40px;
+            margin-top: 25px;
+            padding-left: 15px;
+            font-size: 20px;
+            background: transparent;
+        }
+
+        .input_task:focus {
+            outline: none;
+        }
+
+        .add_btn {
+            background: transparent;
+            width: 100px;
+            height: 50px;
+            margin: 100px 110px;
+            cursor: pointer;
+            transition: all 0.4s;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .add_btn:hover {
+            background-color: black;
+            color: white;
+        }
+
+        label {
+            display: flex;
+            /* justify-content: space-between; */
+        }
+
+        .error_block {
+            width: 606px;
+            height: 120px;
+            background-color: #EA2027;
+            position: absolute;
+            top: 200px;
+            left: 270px;
+            border: 1px solid black;
+            box-shadow: 10px 5px 5px black;
+            border-radius: 15px;
+            padding: 15px;
+            display: none;
+            text-align: center;
+            color: black;
+            /* position: relative; */
+        }
+
+        .btn-hide {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: 25px;
+            right: 25px;
+            cursor: pointer;
+        }
+
+        input {
+            margin-right: 10px;
+        }
+
+        .error_block p {
+            font-size: 30px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="note">
+        <div class="wrapper">
+            <div class="page1 first-page">
+                <h1 class="task_list">Список завдань</h1>
+                <form name="f2"></form>
+            </div>
+            <div class="page2">
+                <h1 class="task_list">Додати нове завдання</h1>
+                <form name="f1">
+                    <input class="input_task" type="text" name="task" id="">
+                    <button class="add_btn" type="button">Add</button>
+                </form>
+            </div>
+        </div>
+        <div class="error_block">
+            <img src="https://cdn-icons-png.flaticon.com/512/67/67345.png" alt="" class="btn-hide">
+            <p class="text-error_block"></p>
+        </div>
+    </div>
+
+    <script src="task2.js"></script>
+</body>
+
+</html>

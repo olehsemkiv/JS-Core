@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 12.3</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+        .box {
+            width: 30%;
+            height: 600px;
+            border: 4px solid cadetblue;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            margin: 100px;
+        }
+
+        .task {
+            width: 200px;
+            height: 60px;
+            background-color: cadetblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            border-radius: 35px;
+            font-family: monospace;
+            font-size: 28px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .wrapper{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="task"><a href="index.html">Task 1</a></div>
+        <div class="task"><a href="index2.html">Task 2</a></div>
+        <div class="task"><a href="index3.html">Task 3</a></div>
+        <div class="task"><a href="index4.html">Task 4</a></div>
+    </nav>
+    <div class="wrapper">
+        <div class="box" id="item-first"></div>
+    <div class="box" id="item-second"></div>
+    <div class="box" id="item-third"></div>
+    </div>
+
+    <script src="main3.js"></script>
+</body>
+
+</html>
